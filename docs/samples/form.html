@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+MIT License
+
+Copyright (c) 2017 Samuel Felício Adriano
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<html>
+    <head>
+        <title>Doneto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <article>
+            <h1>Doneto - Samples</h1>
+            <h2>Form</h2>
+            <p>
+                Here is a simple form:
+            </p>
+            <form>
+                <fieldset oninput="total.value = parseInt(price.value) - parseInt(discount.value)">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" value="50">
+                    <label for="discount">Discount:</label>
+                    <input type="number" id="discount" name="discount" value="10">
+                    <label for="total">Total:</label>
+                    <output name="total" for="price discount">40</output>
+
+                    <label for="name">Name:</label>
+                    <input name="name" type="text" id="name" size="25" placeholder="First Name"/>
+
+                    <label for="password">Password:</label>
+                    <input name="password" type="password" id="password" size="25">
+
+                    <label for="birth">Birth Date:</label>
+                    <input name="birth" type="date" id="birth">
+
+                    <label for="email">Your email:</label>
+                    <input name="email" type="email" id="email" size="25" placeholder="with @"/>
+
+                    <label for="color">Favorite Color:</label>
+                    <input name="color" type="color" id="color"/>
+
+                    <label for="select">What Doneto is to you?</label>
+                    <select name="select" id="select">
+                        <option value="love">Doneto is love</option>
+                        <option value="life">Doneto is life</option>
+                        <option value="nothing" disabled="disabled">Nothing really</option>
+                    </select>
+
+                    <input type="radio" id="morning" name="person"/>
+                    <label for="morning">I'm a morning person</label>
+                    <input type="radio" id="night" name="person"/>
+                    <label for="night">I'm a night person</label>
+
+                    <label for="reason">Why do you love Doneto?</label>
+                    <textarea name="reason" id="reason" placeholder="Describe here why you love Doneto"></textarea>
+
+                    <input type="checkbox" name="consent" id="consent" value="test"/>
+                    <label for="consent">I'd love to test Doneto</label>
+
+                    <button type="submit">Subscribe</button>
+                    <button type="reset">Reset</button>
+                    <button disabled="disabled">Doneto isn't that great</button>
+                </fieldset>
+            </form>
+        </article>
+    </body>
+</html>
