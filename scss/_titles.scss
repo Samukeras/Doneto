@@ -19,12 +19,12 @@
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
-/*
-    Created on : 02/04/2017
-    Author     : Samuel Felício Adriano
-*/
+
+//  Created on : 02/04/2017
+//  Author     : Samuel Felício Adriano
 
 @import 'colors';
+@import 'fonts';
 
 h1,
 h2,
@@ -32,6 +32,7 @@ h3,
 h4,
 h5,
 h6 {
+    @extend %sans_serif;
     color : $black;
     margin: $em;
 }

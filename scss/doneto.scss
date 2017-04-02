@@ -18,15 +18,9 @@
 //AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 //LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-//SOFTW//ARE.
+//SOFTWARE.
 
-//Created on : 02/04/2017
-//Author     : Samuel Felício Adriano
+//  Created on : 02/04/2017
+//  Author     : Samuel Felício Adriano
 
-//The em size unit is recommended by the W3C.
-//The default text size in browsers is 16px.
-$em: 18px;
-
-p {
-    font: $em;
-}
+@import 'titles';
