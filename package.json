@@ -1,0 +1,35 @@
+{
+  "name": "doneto",
+  "version": "1.0.0",
+  "description": "CSS Classless Framework",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samukeras/Doneto.git"
+  },
+  "keywords": [
+    "css",
+    "class",
+    "classless",
+    "css-framework"
+  ],
+  "author": "Samuel Felício Adriano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Samukeras/Doneto/issues"
+  },
+  "homepage": "https://github.com/Samukeras/Doneto#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1"
+  }
+}
