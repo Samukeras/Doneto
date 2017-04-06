@@ -1,0 +1,23 @@
+Como contribuir com o Doneto:
+
+1º Instale o SASS:
+Windows: http://blog.caelum.com.br/tutorial-instalando-usando-sass-no-windows/
+Linux: sudo su -c "gem install sass"*
+
+*É necessário ter instalado o ruby antes: sudo apt-get install ruby-full
+
+2º Instale Node.js:
+Windows: http://marcosrocha.net/node-js/instalando-o-node-js-no-windows-how-to-node/
+Linux: https://tableless.com.br/como-instalar-node-js-no-linux-corretamente-ubuntu-debian-elementary-os/
+
+3º Instalar gulp:
+npm install -g gulp
+
+4º Criar as dependências para desenvolvimento local:
+Na pasta do projeto:
+npm install gulp-ruby-sass gulp-cssnano gulp-rename gulp-notify --save-dev
+
+Para testar rodar uma das task definidas no gulfile.js:
+gulp css
+ou
+gulp minify

@@ -23,36 +23,65 @@
 //  Created on : 02/04/2017
 //  Author     : Samuel Felício Adriano
 
-$serif     :  Garamond, 'Book Antiqua', Georgia, 'Palatino Linotype', serif;
-$sans_serif: 'Motiva Sans Regular', 'Helvetica Neue', 'PT Sans Pro', Audrey, Helvetica, sans-serif;
-$monospace : 'Apercu Mono', Monaco, Consolas, 'Courier New', Menlo, monospace;
+@import 'colors';
+@import 'fonts';
 
-//The "em" size unit is recommended by the W3C.
-//The default text size in browsers is 16px.
-$em: 18px;
-
-
-%font {
-    font-size   : $em;
-    font-style  : normal;
-    font-weight : normal;
-    font-variant: normal;
+ul,
+ol,
+dl {
+    margin-bottom: 1.75 * $em;
 }
 
-%serif {
-    @extend %font;
-    font-family: $serif;
-    line-height: 1.5 * $em;
+ul {
+    margin-left: 0.25 * $em;
+    text-align : center;
+    list-style : none;
+
+    li {
+        display     : inline;
+        margin-left : 0.5 * $em;
+        margin-right: 0.5 * $em;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
-%sans_serif {
-    @extend %font;
-    font-family: $sans-serif;
-    line-height: 1.5 * $em;
+ol,
+ul {
+    margin-left: 1.75 * $em;
 }
 
-%monospace {
-    @extend %font;
-    font-family: $monospace;
-    line-height: 1.25 * $em;
+li {
+    dl,
+    ol,
+    ul {
+        margin-bottom: 0.125 * $em;
+    }
+}
+
+dl {
+    display: inline-block;
+}
+
+dt {
+    padding: 0 $em;
+}
+
+dd {
+    padding: 0 $em (.25 * $em);
+
+    &:last-of-type {
+        border-bottom: (.06 * $em) solid $gray;
+    }
+
+    + dt {
+        border-top: (.06 * $em) solid $gray;
+        padding-top: .5 * $em;
+    }
 }
