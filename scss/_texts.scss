@@ -20,35 +20,50 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
-//  Created on : 02/04/2017
+//  Created on : 09/04/2017
 //  Author     : Samuel Felício Adriano
 
-$white  : #FFFFFF;
-$black  : #111111;
-$gray   : #AAAAAA;
+@import 'colors';
+@import 'fonts';
 
-$red    : #FF4136;
-$green  : #2ECC40;
-$blue   : #0074D9;
+p,
+blockquote {
+  margin-bottom: 1.75 * $em;
+}
 
-$yellow : #FFDC00;
-$orange : #FF851B;
-$pink   : #FF69B4;
-$purple : #B10DC9;
-$brown  : #663300;
+section {
+  margin-left : auto;
+  margin-right: auto;
+  max-width   : 100%;
+  width       : 50 * $em;
+}
 
-$silver : #DDDDDD;
-$gold   : #C79316;
+article {
+  background   : lighten($background-color, 5);
+  border       : .1 * $em solid lighten($black, 85);
+  border-radius: .4 * $em;
+  padding      :  2 * $em;
+}
 
-$navy   : #001f3f;
-$aqua   : #7FDBFF;
-$teal   : #39CCCC;
-$olive  : #3D9970;
-$lime   : #01FF70;
-$maroon : #85144b;
-$fuchsia: #F012BE;
+header {
+  margin-bottom: 2 * $em;
+}
 
-$tce    : #FEE9BA;
+footer {
+  margin-top: 2 * $em;
+}
 
-$background-color: #f1f1f1;
-$font-color      : lighten($black, 10);
+nav {
+  text-align: center;
+}
+
+blockquote {
+  border-left: (.12 * $em) solid $gray;
+  padding    : (.25 * $em) $em (.25 * $em) (.88 * $em);
+
+  footer {
+    color    : $gray;
+    font-size: .75 * $em;
+    margin   : .1 * $em;
+  }
+}

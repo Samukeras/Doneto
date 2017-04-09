@@ -62,6 +62,6 @@ h5 {
 }
 
 h6 {
-    color      : $gray;
+    color      : darken($background-color, 25);
     font-weight: 100;
 }

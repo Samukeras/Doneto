@@ -20,35 +20,32 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
-//  Created on : 02/04/2017
+//  Created on : 09/04/2017
 //  Author     : Samuel Felício Adriano
 
-$white  : #FFFFFF;
-$black  : #111111;
-$gray   : #AAAAAA;
+@import 'colors';
+@import 'fonts';
 
-$red    : #FF4136;
-$green  : #2ECC40;
-$blue   : #0074D9;
+* {
+  border         : 0;
+  border-collapse: separate;
+  border-spacing : 0;
+  box-sizing     : border-box;
+  margin         : 0;
+  outline        : 0;
+  padding        : 0;
+  text-align     : left;
+  vertical-align : baseline;
+}
 
-$yellow : #FFDC00;
-$orange : #FF851B;
-$pink   : #FF69B4;
-$purple : #B10DC9;
-$brown  : #663300;
+html {
+  @extend %sans_serif;
+  height: 100%;
+  width : 100%;
+}
 
-$silver : #DDDDDD;
-$gold   : #C79316;
-
-$navy   : #001f3f;
-$aqua   : #7FDBFF;
-$teal   : #39CCCC;
-$olive  : #3D9970;
-$lime   : #01FF70;
-$maroon : #85144b;
-$fuchsia: #F012BE;
-
-$tce    : #FEE9BA;
-
-$background-color: #f1f1f1;
-$font-color      : lighten($black, 10);
+body {
+  background: $background-color;
+  color     : $font-color;
+  padding   : 2 * $em;
+}
