@@ -20,11 +20,24 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
-//  Created on : 02/04/2017
+//  Created on : 22/04/2017
 //  Author     : Samuel Felício Adriano
 
-@import 'general';
-@import 'images';
-@import 'lists';
-@import 'texts';
-@import 'titles';
+@import 'colors';
+@import 'fonts';
+
+img {
+  height   : auto;
+  margin   : 0.1 * $em auto;
+  max-width: 100%;
+}
+
+figure {
+    img {
+    display: block;
+  }
+}
+
+figcaption {
+    text-height: 0.75 * $em;
+}
